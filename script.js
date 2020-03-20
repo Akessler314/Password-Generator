@@ -59,6 +59,7 @@ form.addEventListener('submit', e => {
 
 
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
+  console.log("text")
   let charCodes = LOWERCASE_CHAR_CODES
   if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
   if (includeSymbols) charCodes = charCodes.concat(SYMBOL_CHAR_CODES)

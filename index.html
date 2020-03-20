@@ -22,10 +22,10 @@
         <textarea readonly id="passwordDisplay" placeholder="Your Secure Password"
           aria-label="Generated Password"></textarea>
       </div>
-      <div id="passwordGeneratorForm" class="card-footer">
+      <form id="passwordGeneratorForm" class="card-footer">
         <label for="characterAmountNumber"> Number of Characters</label>
-        <input type="range" min="1" max="225" value="10" id="characterAmountRange">
-        <input type="number" min="1" max="225" value="10" id="characterAmountNumber">
+        <input type="range" min="8" max="128" value="10" id="characterAmountRange">
+        <input type="number" min="8" max="128" value="10" id="characterAmountNumber">
         <br>
         <br>
 
@@ -40,7 +40,7 @@
         <br>
         <br>
         <button id="generate" class="btn">Generate Password</button>
-      </div>
+      </form>
     </div>
   </div>
   <script src="script.js"></script>
